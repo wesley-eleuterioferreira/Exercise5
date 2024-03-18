@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .menu {
+        width: 45px;
+        height: 3.5px;
+        background-color:rgb(50, 45, 142);
+        display: block;
+        margin: 4px;
+        border-radius: 25px;
+      }
+      .hamb {
+        width: 20%;
+        display: grid;
+        gap: 0;
+        justify-content: end;
+        
+      }
+      nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-block:3rem ;
+        position: relative;
+      }
+      .logo {
+        width: 50%;
+        text-align: center;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3.5rem;
+        color:rgb(50, 45, 142);
+        letter-spacing: 0.800rem;
+      }
+      .logo::after{
+        content: '';
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 52%;
+        left: 56%;
+        border-radius: 50%;
+        outline: 3px white solid;
+        
+        background-color:rgb(50, 45, 142);
+      }
+      .logo:hover{
+      text-shadow: rgb(50, 45, 142) 5px 3px 0px;
+      color: white;
+      transition: all ease 250ms;
+      outline-color: black;
+      text-outline: solid;
+      }
+      .container {
+        max-width: 95%;
+        margin-inline: auto;
+      }
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .search {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        border: rgb(50, 45, 142) solid 2px;
+        justify-content: space-around;
+        padding: 0.6rem;
+      }
+      .search:hover{
+  box-shadow:  rgb(50, 45, 142) 10px 10px;
+  transition: all ease 250ms;
+}
+      input {
+        outline: none;
+        border: none;
+        padding: auto;
+        width: 100%;
+        height: 100%;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+        color:rgb(50, 45, 142);
+        display: flex;
+        justify-content: flex-start;
+      }
+      ::placeholder {
+        color:rgb(50, 45, 142);
+      }
+      
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 3,
+        'wght' 700,
+        'GRAD' 10,
+        'opsz' 100,       
+}
+.search>span{
+    font-size: 2rem;
+    color:rgb(50, 45, 142);
+}
+.sec-cont{
+    border: rgb(50, 45, 142) solid 2px ;
+    position: relative;
+    min-height: 400px;
+    padding: 2rem;
+    
+    
+
+}
+.color-box{
+    background-color: rgb(50, 45, 142) ;
+    max-width: 30%;
+    min-height: 250px;
+    position: absolute;
+    right: 50px;
+    top:50%;
+    color:white;
+    padding:2rem;
+}
+.sec-cont>p{
+    padding: 1.2rem;
+    color: rgb(122, 120, 120);
+}
+.sec-cont>h1{
+    color:rgb(50, 45, 142) ;
+    margin-block:1.5rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.foot{
+  background-color: rgb(50, 45, 142) ;
+  min-height: 20rem;
+  box-shadow: 20px 0px 0px 10px rgb(122, 120, 120);
+  outline: 10px black;
+}
+nav>ul{
+    display: flex;
+    list-style: none;
+    color:rgb(50, 45, 142) ;
+    width: 100vw;
+    justify-content: space-between; 
+    
+    
+}
+
+
+li:nth-child(2){
+  padding-inline: 3rem;
+}
+li:nth-child(3){
+  padding-inline: 2.5rem;
+}
+nav>ul>li{
+    border: 2px solid rgb(50, 45, 142);        
+    padding-inline:1rem;
+    padding-block: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  font-style: normal;  
+  letter-spacing:0.20rem; 
+}
+nav>ul>li:hover{
+  box-shadow: rgb(50, 45, 142) 10px 10px  ;
+  transition: all ease 250ms;
+}
+.box:hover{
+  box-shadow: rgb(122, 120, 120) 10px 10px  ;
+  transition: all ease 250ms;
+}
+  
+
+
+.nav-two{
+        align-items: center;
+        display: flex;
+        
+        margin-block:3rem ;
+        
+}
+section{
+    
+    margin-bottom: 8rem;
+    
+}
+.sec-cont2{
+    border: rgb(177, 18, 18) solid 2px ;
+    position: relative;
+    min-height: 400px;
+    padding: 2rem;
+    
+    
+
+}
+
+
+.color-box2{
+    background-color:rgb(177, 18, 18) ;
+    max-width: 30%;
+    min-height: 250px;
+    position: absolute;
+    left: 50px;
+    top:50%;
+    color:white;
+    padding:2rem;
+    text-align: justify;
+}
+.color-box3{
+    background-color:rgb(244, 241, 30) ;
+    max-width: 30%;
+    min-height: 250px;
+    position: absolute;
+    right: 50px;
+    top:50%;
+    color:white;
+    padding:2rem;
+    text-align: justify;
+}
+.sec-cont2>p{
+    padding: 1.2rem;
+    color: rgb(122, 120, 120);
+    text-align: right;}
+    
+
+.sec-cont3>p{
+    padding: 1.2rem;
+    color: rgb(122, 120, 120);
+    text-align: justify;
+  }
+.sec-cont2>h1{
+    color:rgb(177, 18, 18) ;
+    margin-block:1.5rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;}
+    
+
+.par{
+    max-width: 50%;
+    color: rgb(122, 120, 120);
+    border:black solid 2px;
+    padding: 2rem;;
+}
+.par2{
+    max-width: 45%;
+    margin-left:auto;
+    text-align: center;
+    color: rgb(122, 120, 120);
+    
+    text-align: justify;
+}
+.par3{
+    max-width: 45%;
+    
+    text-align: justify;
+    color: rgb(122, 120, 120);
+    
+    text-align: justify;}
+    .sec-cont3{
+    border: rgb(244, 241, 30) solid 2px ;
+    position: relative;
+    min-height: 400px;
+    padding: 2rem;
+    
+}
+.sec-cont3>h1{
+    color:rgb(244, 241, 30);
+    margin-block:1.5rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    
+}
+
+ul>li:first-child{
+  justify-content: flex-start;
+}
+
+</style>
+      
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <div class="search">
+          <input type="text" placeholder="Search" /><span
+            class="material-symbols-outlined"
+          >
+            search
+          </span>
+        </div>
+        <div class="logo">LOGO</div>
+        <div class="hamb">
+          <span class="menu"></span>
+          <span class="menu"></span>
+          <span class="menu"></span>
+        </div>
+      </nav>
+    </header>
+    
+        <nav class="nav-two container">
+            <ul>
+              
+                <li>MUSEUMS</li>
+                <li>FREE</li>
+              
+                
+                <li>MUSIC</li>
+                <li>THEATHER</li>
+              
+            </ul>
+        </nav>
+    
+    <section class="container">
+        <div class="sec-cont ">
+            <h1>
+                Hello Everyone
+            </h1><div class="par"><p>
+            dkdkhhdkhvsdhkfgsdglisgvlisg Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa deleniti quibusdam nemo facilis, quidem quo asperiores consequuntur? Similique nostrum iusto eaque modi harum autem voluptatibus provident amet consequuntur dolores libero, temporibus repudiandae blanditiis. Itaque obcaecati fuga minus iure voluptates provident molestiae blanditiis, error dolorum optio, illo tempore molestias libero?</p></div>
+            <div class="color-box box">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam nulla aperiam obcaecati. Aspernatur aperiam necessitatibus consequatur accusantium eos dolorem?
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="sec-cont2 ">
+            <h1>
+                Hello Everyone
+            </h1><div class="par2"><p>
+            dkdkhhdkhvsdhkfgsdglisgvlisg Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa deleniti quibusdam nemo facilis, quidem quo asperiores consequuntur? Similique nostrum iusto eaque modi harum autem voluptatibus provident amet consequuntur dolores libero, temporibus repudiandae blanditiis. Itaque obcaecati fuga minus iure voluptates provident molestiae blanditiis, error dolorum optio, illo tempore molestias libero?</p></div>
+            <div class="color-box2 box">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam nulla aperiam obcaecati. Aspernatur aperiam necessitatibus consequatur accusantium eos dolorem?
+            </div>
+        </div>
+    </section>
+    <section class="container">
+      <div class="sec-cont3">
+          <h1>
+              Hello Everyone
+          </h1><div class="par3"><p>
+          dkdkhhdkhvsdhkfgsdglisgvlisg Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa deleniti quibusdam nemo facilis, quidem quo asperiores consequuntur? Similique nostrum iusto eaque modi harum autem voluptatibus provident amet consequuntur dolores libero, temporibus repudiandae blanditiis. Itaque obcaecati fuga minus iure voluptates provident molestiae blanditiis, error dolorum optio, illo tempore molestias libero?</p></div>
+          <div class="color-box3 box">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam nulla aperiam obcaecati. Aspernatur aperiam necessitatibus consequatur accusantium eos dolorem?
+          </div>
+      </div>
+  </section>
+  <footer>
+    
+      <div class="foot"></div>
+    
+  </footer>
+  </body>
+</html>
